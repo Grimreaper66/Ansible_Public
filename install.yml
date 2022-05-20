@@ -1,6 +1,9 @@
-- name: Install Multiple Programs
-  win_chocolatey:
-    name: '{{ item }}'
-    state: present
-  with_items:
-    - 7zip
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Install Multiple Programs
+      win_chocolatey:
+      name: '{{ item }}'
+      state: present
+    with_items:
+      - 7zip
