@@ -1,0 +1,6 @@
+- name: Install Multiple Programs
+  win_chocolatey:
+    name: '{{ item }}'
+    state: present
+  with_items:
+    - 7zip
