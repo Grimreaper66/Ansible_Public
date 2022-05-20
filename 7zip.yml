@@ -1,7 +1,7 @@
 - name: Install 7zip on Hosts
   hosts: all
   tasks:
-    - name: Ensure 7-Zip is installed via Chocolatey
+    - name: Install 7zip
       win_chocolatey:
         name: 7zip
         state: present
