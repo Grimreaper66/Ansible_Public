@@ -1,7 +1,5 @@
 - name: Install 7zip on Hosts
   hosts: all
-  vars:
-    ansible_remote_tmp: C:\Windows\Temp
   collections:
   - chocolatey.chocolatey
   tasks:
