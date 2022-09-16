@@ -3,6 +3,11 @@
   collections:
   - chocolatey.chocolatey
   tasks:
+    - name: Create temporary build directory
+      ansible.windows.win_tempfile:
+        state: directory
+        suffix: build
+  
     - name: Install 7zip
       chocolatey.chocolatey.win_chocolatey:
         name: 7zip
